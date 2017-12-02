@@ -1,7 +1,7 @@
 FROM resin/rpi-raspbian
 
 RUN apt-get update && \
-    apt-get install -q perl adduser iproute iputils-ping curl wget faad flac lame sox
+    apt-get install -q perl adduser iproute iputils-ping curl wget faad flac lame sox libio-socket-ssl-perl
 
 ENV LANG en_US.UTF-8
 ENV LOGITECH_MEDIA_SERVER_URL http://downloads.slimdevices.com/LogitechMediaServer_v7.9.0/logitechmediaserver_7.9.0_arm.deb
